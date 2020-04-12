@@ -1,0 +1,11 @@
+.terminal-body {
+    /* General parameters of the terminal window */
+    width: 600px;
+    height: 400px;
+     /* Main color of the terminal window */
+    background-color: black;
+     /* Borders of the terminal window */
+    border-radius: 5px;
+    border: solid gainsboro 1px;
+    /* Shadow of terminal window */
+}
