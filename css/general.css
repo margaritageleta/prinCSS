@@ -1,11 +1,52 @@
-body {
-    width: 100%;
-    height: 100%;
+.vertical {  height: 100%;  }
+.horizontal { width: 100%; }
 
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
 
     padding: 0;
     margin: 0;
+
+    background-color: pink;
 }
+
+nav {
+    width: 50px;
+    background-color: whitesmoke;
+
+    transition: all 4s ease-out;
+    transition: all 0.5s ease-in;
+    display: flex;
+    
+}
+
+nav > section:nth-child(1) {
+    background-color: indianred;
+    width: 0;
+    transition: all 0.5s ease-in;
+}
+
+nav > section:nth-child(2) {
+    background-color: transparent;
+    width: 50px !important;
+}
+
+main {
+    background-color: gainsboro;
+}
+
+.menu-button {
+    height: 50px;
+    background-color: indianred;
+
+    cursor: pointer;
+    border-bottom-right-radius: 50%;
+}
+
+.main-section {
+    font-family: 'Lobster Two', cursive;
+    background-color: whitesmoke;
+    margin: 25px;
+}
+

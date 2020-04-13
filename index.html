@@ -1,9 +1,43 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/general.css">
-        <link rel="stylesheet" type="text/css" href="css/terminal.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/terminal.css">-->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+        <script>
+            const closeNav = () => {
+                let navig = document.getElementById("nav");
+                let navigMenu =  document.getElementById("menu");
+                if (navigMenu.classList.contains("active")) {
+                    navigMenu.classList.add("inactive");
+                    navigMenu.classList.remove("active");
+    
+                    navig.style.width = "50px";
+                    navigMenu.style.width = "0";
+                }
+                else {
+                    navigMenu.classList.add("active");
+                    navigMenu.classList.remove("inactive");   
+                    
+                    navig.style.width = "300px";
+                    navigMenu.style.width = "250px";
+                }
+            };
+        </script>
     </head>
-    <body>
-        
+    <body id="body" class="horizontal vertical">
+        <nav id="nav" class="vertical">
+            <section id="menu" class="vertical inactive">Menu</section>
+            <section class="vertical">
+                <div class="menu-button horizontal" onclick="closeNav()">
+                    Click
+                </div>
+            </section>
+        </nav>
+        <main class="horizontal vertical">
+            <section class="main-section">
+                Style it like a prinCSS
+            </section>
+        </main>
     </body>
 </html>
