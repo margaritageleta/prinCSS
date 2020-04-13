@@ -14,7 +14,7 @@
 .terminal-body {
     /* General parameters of the terminal window */
     width: 450px;
-    height: 200px;
+    height: 250px;
      /* Main color of the terminal window */
     background-color: var(--terminal-body);
      /* Borders of the terminal window */
