@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Chilanka&family=Clicker+Script&family=Dancing+Script&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 100%;
+                height: 100%;
+            }
+
+            .art-container {
+                background-color:transparent;
+                height: 400px;
+                width: 600px;
+                display: grid;
+                grid-template-columns: [inipad] 25px [col1] 1fr [col2] 1fr [col3] 1fr [col4] 20px [endpad2] 25px [endpad];
+                grid-template-rows: [inipad] 20px [inipad2] 20px [row1] 1fr[row2] 1fr [row3] 1fr [row4] 1fr [row5] 20px [endpad2] 20px [endpad];
+
+                padding: 0;
+                column-gap: 5px;
+                row-gap: 5px;
+            }
+            
+            #art-item-1 {
+                grid-column-start: col1;
+                grid-column-end: col2;
+
+                grid-row-start: row1;
+                grid-row-end: row5;
+
+                background-image: url('../img/artitem5.png');
+                background-size: cover;
+                background-position: center;
+
+            }
+            #art-item-2 {
+                grid-column-start: col2;
+                grid-column-end: endpad2;
+
+                grid-row-start: inipad2;
+                grid-row-end: row3;
+
+                background-image: url('../img/artitem2.png');
+                background-size: cover;
+                background-position: center;
+            }
+            #art-item-3 {
+                grid-column-start: col2;
+                grid-column-end: col4;
+
+                grid-row-start: row3;
+                grid-row-end: endpad2;
+
+                background-image: url('../img/artitem1.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .dots {
+                background: radial-gradient(rgba(248, 248, 255, 0.5) 2px, transparent 2px), transparent;
+                background-size: 20px 20px;
+                z-index: 3;
+
+                grid-column-start: inipad;
+                grid-column-end: endpad;
+
+                grid-row-start: inipad;
+                grid-row-end: endpad;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 10px 25px;
+                font-weight: normal;
+                font-size: 72px;
+                font-family: 'Clicker Script', cursive;
+                line-height: 50px;
+                color: #825d7c;
+
+                position: relative;
+                width: 500px;
+                height: 110px;
+                top: 230px;
+                left: 100px;
+                background-color: transparent;
+                text-align: center;
+                text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+            }
+
+            .rounded {
+                border-radius: 15px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <section class="art-container">
+            <!--<div class="dots"></div>-->
+            <div id="art-item-1" class="rounded"></div>
+
+            <div id="art-item-2" class="rounded"></div>
+
+            <div id="art-item-3" class="rounded">
+                
+            </div>
+            <h2>Illusion is the first of all pleasures.</h2>
+        </section>
+    </body>
+</html>
